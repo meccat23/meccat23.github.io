@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts always add your fonts in the beggining so they can load first -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+       <!-- too get the text an button in the center  on one row of the page wrap it with a div class of row make sure to add a closing div class at the end-->
+      
+       <!-- because im using bootstrap i can use a class called text center-->
+      
+       <!-- if i inspect this code ill see everything is being targeted at thru the container class the container class is holding everything together like a container the conainer is not the full width of the page its in the middle so what ill do is change the container height-->
+       
+       <!--this is were i changed the containers height i add the height inside the container tag "h-100" an this is what made the text go in the center also using bootstrap an using a meta tag its responsive -->
+       
+       
+       
+    <div class="container d-flex align-items-center h-100">
+      <div class="row">
+          <header class="text-center col-12">
+    
+        <!--bootstrap has a class i can use called text uppercase to change the font to uppercase i couldve changed the font 3 ways in the css file i cloud add a style , or just change them in uppercase , or because im using bootstrap i can add a class element called text uppercase-->
+    
+       <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+      </header>
+       <!-- these 3 classes right here... btn ,,, btn primary,,,, btn-xl are 3 different classes you can style in css at first you might not notice that but...yea these are 3 differnt class selectors-->
+         
+         
+         <!-- i wanted a space between the text an the bottom button so i can a div class attribute too buffer an col 12 for length if you take out the col 12 for the lenght youll see the buffer effort is gone because you took the height out-->
+         <div class="buffer col-12"></div>
+         
+         
+         <!-- the hr tag makes a line-->
+         <!-- added another section using the section tag-->
+         <!-- i used a text center class paired with the section tag-->
+         <section class="text-center col-12">
+       <hr>
+       <a href="https://mailchi.mp/18be04417661/ztmstudents">
+       <button class="btn btn-primary btn-xl">Find out more</button>
+       </a>
+       </section>
+     </div>
+   </div>
+  </body>
+</html>
